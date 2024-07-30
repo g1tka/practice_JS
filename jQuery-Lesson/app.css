@@ -1,0 +1,7 @@
+.box1 {
+  /*HTMLがすべてよみこまれてから、jQueryが動作するため、上から下に表示するときは最初非表示*/
+  display: none;
+  background-color: #FF0000;
+  height: 200px;
+  width: 200px;
+}
