@@ -17,3 +17,26 @@ $(function(){
     $('.box2').removeClass('box2-ext');
   });
 });
+
+$(document).ready(function() {
+  $('#toggleBox').click(function() {
+    let $pElement = $(this).find('.text');
+    if ($pElement.text() === 'もじ') {
+        $pElement.text('文字').removeClass('text-blue').addClass('text-green');
+    } else {
+        $pElement.text('もじ').removeClass('text-green').addClass('text-blue');
+    }
+  });
+});
+
+$(document).ready(function() {
+  // id=　全てのポスト
+  $('span[id^="toggle-"]').click(function() {
+    let $pElement = $(this).find('.text');
+    if ($pElement.text() === '公開') {
+      $pElement.text('非公開').removeClass('text-success').addClass('text-secondary');
+    } else {
+      $pElement.text('公開').removeClass('text-secondary').addClass('text-success');
+    }
+  });
+});

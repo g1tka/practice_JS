@@ -17,3 +17,15 @@
 .box2-ext {
   border: 10px solid black;
 }
+
+.text {
+  font-size: 30px
+}
+
+.text-blue {
+  color: blue;
+}
+
+.text-green {
+  color: green;
+}

@@ -6,8 +6,10 @@
   </head>
   <body>
     <div class="box1"></div>
-    <div class="box2"></div>
+    <div class="box2" id="toggleBox"><p class="text text-blue">もじ</p></div>
     <script src="jquery.min.js"></script>
     <script src="app.js"></script>
+    <span id="toggle-<%= post.id %>" class="text text-success">公開</span>
+    <span id="toggle-<%= post.id %>" class="text text-secondary">非公開</span>
   </body>
 </html>
